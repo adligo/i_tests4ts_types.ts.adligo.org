@@ -59,7 +59,9 @@ export enum ComparisonNodeInfoType {
 
 export enum TrialType {
   ApiTrial,
-  SourceFileTrial
+  DataTrial,
+  SourceFileTrial,
+  UseCaseTrial
 }
 
 export enum TypeName {
