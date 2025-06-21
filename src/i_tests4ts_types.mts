@@ -73,7 +73,9 @@ export enum TypeName {
   Boolean,
   Map,
   Number,
+  Null,
   Object, 
   Set, 
-  String, 
+  String,
+  Undefined 
 }
