@@ -44,6 +44,10 @@ export enum ComparisonNodeInfoType {
    */
   CollectionSize,
   /**
+   * Indicates a I_ComparisionEqualInfo
+   */
+  Equal,
+  /**
    * Indicates a I_ComparisionMapValueInfo
    */
   MapValue, 
