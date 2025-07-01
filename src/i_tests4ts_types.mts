@@ -61,11 +61,31 @@ export enum ComparisonNodeInfoType {
   Type
 }
 
+export function toComparisonNodeInfoTypeLabel(type: ComparisonNodeInfoType): string {
+  switch(type) {
+    case ComparisonNodeInfoType.Array: return "Array";
+    case ComparisonNodeInfoType.CollectionSize: return "CollectionSize";
+    case ComparisonNodeInfoType.Equal: return "Equal";
+    case ComparisonNodeInfoType.MapValue: return "MapValue";
+    case ComparisonNodeInfoType.Set: return "Set";
+    case ComparisonNodeInfoType.Type: return "Type";
+  }
+}
+
 export enum TrialType {
   ApiTrial,
   DataTrial,
   SourceFileTrial,
   UseCaseTrial
+}
+
+export function toTrialTypeLabel(type: TrialType): string {
+  switch(type) {
+    case TrialType.ApiTrial: return "ApiTrial";
+    case TrialType.DataTrial: return "DataTrial";
+    case TrialType.SourceFileTrial: return "SourceFileTrial";
+    case TrialType.UseCaseTrial: return "UseCaseTrial";
+  }
 }
 
 export enum TypeName {
@@ -79,4 +99,19 @@ export enum TypeName {
   Set, 
   String,
   Undefined 
+}
+
+export function toTypeNameLabel(type: TypeName): string {
+  switch(type) {
+    case TypeName.Array: return "Array";
+    case TypeName.Boolean: return "Boolean";
+    case TypeName.Map: return "Map";
+    case TypeName.NaN: return "NaN";
+    case TypeName.Number: return "Number";
+    case TypeName.Null: return "Null";
+    case TypeName.Object: return "Object";
+    case TypeName.Set: return "Set";
+    case TypeName.String: return "String";
+    case TypeName.Undefined: return "Undefined";
+  }
 }
