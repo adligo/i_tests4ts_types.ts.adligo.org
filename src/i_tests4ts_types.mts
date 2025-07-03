@@ -91,6 +91,7 @@ export function toTrialTypeLabel(type: TrialType): string {
 export enum TypeName {
   Array,
   Boolean,
+  I_String,
   Map,
   NaN,
   Number,
@@ -105,6 +106,7 @@ export function toTypeNameLabel(type: TypeName): string {
   switch(type) {
     case TypeName.Array: return "Array";
     case TypeName.Boolean: return "Boolean";
+    case TypeName.I_String: return "I_String";
     case TypeName.Map: return "Map";
     case TypeName.NaN: return "NaN";
     case TypeName.Number: return "Number";
